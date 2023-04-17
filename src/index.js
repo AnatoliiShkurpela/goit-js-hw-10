@@ -2,7 +2,7 @@ import './css/styles.css';
 import debounce from 'lodash.debounce';
 import Notiflix from 'notiflix';
 import { fetchCountries } from './fetchCountries.js';
-//===================================================
+
 const DEBOUNCE_DELAY = 300;
 const searchbox = document.querySelector('input#search-box');
 const ulCountryList = document.querySelector('.country-list');
@@ -83,4 +83,3 @@ function singleDataMarkup(usersdata) {
 function showMessage(type, message) {
   Notiflix.Notify[type](message);
 }
-
