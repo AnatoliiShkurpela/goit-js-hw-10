@@ -31,7 +31,7 @@ function createAndShowList(usersdata) {
   if (usersdata.length > 10) {
     clearMarkup();
     showMessage(typeinfo, messageInfo);
-  } else if (usersdata.length <= 10 && usersdata.length >= 2) {
+  } else if (usersdata.length >= 2) {
     clearMarkup();
     dataMarkup(usersdata);
   } else if (usersdata.length === 1) {
